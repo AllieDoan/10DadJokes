@@ -3,6 +3,7 @@ const joke = document.getElementById('joke');
 
 console.log(joke);
 
+
 async function generateRandomJoke() {
     const response = await fetch('https://icanhazdadjoke.com/', {
         headers: {
@@ -39,5 +40,6 @@ async function generateRandomJoke() {
 //     joke.innerText = data.value;
 // }
 
+generateRandomJoke();
 
 button.addEventListener('click', generateRandomJoke);
